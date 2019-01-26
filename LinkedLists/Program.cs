@@ -13,9 +13,18 @@ namespace LinkedLists
         }
     }
 
-    class Node
+    class Countryside
     {
-        Node PreviousNode;
-        Node NextNode;
+        // how will I make some Villages?
+
+    }
+
+    class Village
+    {
+        Village PreviousVillage;
+        Village NextVillage;
+        String VillageName;
+        bool isAstrildeHere = false;
+        public Village() { }
     }
 }
