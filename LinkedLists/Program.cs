@@ -12,4 +12,10 @@ namespace LinkedLists
         {
         }
     }
+
+    class Node
+    {
+        Node PreviousNode;
+        Node NextNode;
+    }
 }
