@@ -15,16 +15,32 @@ namespace LinkedLists
 
     class Countryside
     {
-        // how will I make some Villages?
+        Village Alst;
+        Village Maeland;
+        Village Schenig;
 
+        public void InitializeMap() {
+            Alst = new Village();
+            Maeland = new Village();
+            Maeland.isAstrildeHere = true;
+            Schenig = new Village();
+
+            Alst.NextVillage = Maeland;
+            Maeland.NextVillage = Schenig;
+            Schenig.NextVillage = Alst;
+        }
+        
+        public void WalkAround() {
+            Village InitialVillage = this.Maeland;
+        }
     }
 
-    class Village
+class Village
     {
-        Village PreviousVillage;
-        Village NextVillage;
-        String VillageName;
-        bool isAstrildeHere = false;
+        public Village PreviousVillage;
+        public Village NextVillage;
+        public String VillageName;
+        public bool isAstrildeHere = false;
         public Village() { }
     }
 }
